@@ -20,52 +20,180 @@
             "path": [
                 "{PROJECT_DIR}/resource/base"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource/base",
-                "{PROJECT_DIR}/resource/bilibili"
-            ]
         }
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "启动游戏",
+            "entry": "客户端"
         },
         {
-            "name": "选项任务",
-            "entry": "MyTask2",
+            "name": "已启动游戏并在首页",
+            "entry": "Main1"
+        },
+        {
+            "name": "专精技能1",
+            "entry": "专精技能1"
+        },
+        {
+            "name": "专精技能2",
+            "entry": "专精技能2"
+        },
+        {
+            "name": "专精技能3",
+            "entry": "专精技能3"
+        },
+        {
+            "name": "更换陪练",
+            "entry": "更换陪练",
             "option": [
-                "任务选项1"
+                "陪练"
             ]
-        },
-        {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "param": {}
         }
     ],
     "option": {
-        "任务选项1": {
+        "陪练": {
             "cases": [
                 {
-                    "name": "文本1",
+                    "name": "艾丽妮近狙",
                     "param": {
-                        "OcrTask": {
-                            "text": "文本1"
+                        "选中更换陪练": {
+                            "expected": "艾丽妮"
+                        },
+                        "确认陪练": {
+                            "expected": "艾丽妮"
                         }
                     }
                 },
                 {
-                    "name": "文本2",
+                    "name": "逻各斯术辅",
                     "param": {
-                        "OcrTask": {
-                            "text": "文本2"
+                        "选中更换陪练": {
+                            "expected": "逻各斯"
+                        },
+                        "确认陪练": {
+                            "expected": "逻各斯"
+                        }
+                    }
+                },
+                {
+                    "name": "先锋嵯峨",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "嵯峨"
+                        },
+                        "确认陪练": {
+                            "expected": "嵯峨"
+                        }
+                    }
+                },
+                {
+                    "name": "先锋备选格拉尼",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "格拉尼"
+                        },
+                        "确认陪练": {
+                            "expected": "格拉尼"
+                        }
+                    }
+                },
+                {
+                    "name": "近卫百炼嘉维尔",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "百炼嘉维尔"
+                        },
+                        "确认陪练": {
+                            "expected": "百炼嘉维尔"
+                        }
+                    }
+                },
+                {
+                    "name": "重装星熊",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "星熊"
+                        },
+                        "确认陪练": {
+                            "expected": "星熊"
+                        }
+                    }
+                },
+                {
+                    "name": "狙击W",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "W"
+                        },
+                        "确认陪练": {
+                            "expected": "W"
+                        }
+                    }
+                },
+                {
+                    "name": "狙击备选黑",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "黑"
+                        },
+                        "确认陪练": {
+                            "expected": "黑"
+                        }
+                    }
+                },
+                {
+                    "name": "术士卡涅利安",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "卡涅利安"
+                        },
+                        "确认陪练": {
+                            "expected": "卡涅利安"
+                        }
+                    }
+                },
+                {
+                    "name": "辅助浊心斯卡蒂",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "浊心斯卡蒂"
+                        },
+                        "确认陪练": {
+                            "expected": "浊心斯卡蒂"
+                        }
+                    }
+                },
+                {
+                    "name": "医疗阿",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "阿"
+                        },
+                        "确认陪练": {
+                            "expected": "阿"
+                        }
+                    }
+                },
+                {
+                    "name": "医疗备选华法琳",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "华法琳"
+                        },
+                        "确认陪练": {
+                            "expected": "华法琳"
+                        }
+                    }
+                },
+                {
+                    "name": "特种归溟幽灵鲨",
+                    "param": {
+                        "选中更换陪练": {
+                            "expected": "归溟幽灵鲨"
+                        },
+                        "确认陪练": {
+                            "expected": "归溟幽灵鲨"
                         }
                     }
                 }
